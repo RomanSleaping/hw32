@@ -1,0 +1,45 @@
+.footer {
+  background-color: $hero_footer-background;
+  width: 1600px;
+  height: 252px;
+  display: flex;
+  margin: 0 auto;
+}
+.accent__blue {
+  color: $blue-color;
+}
+.footer__logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: calc(31 / 26);
+  color: $white-color;
+}
+.footer__location {
+  color: $white-color;
+  margin-top: 9px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: calc(24 / 14);
+}
+.footer__contact__link {
+  color: $footer-grey;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: calc(24 / 14);
+}
+
+.footer__flex {
+  margin-top: 60px;
+}
+.footer__container {
+  margin: 0 auto;
+  display: flex;
+}
+.footer__address {
+  margin-top: 20px;
+  font-style: normal;
+  width: 231px;
+}
+

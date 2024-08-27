@@ -1,0 +1,71 @@
+.clients {
+  width: 1600px;
+}
+.clients__item {
+  border: 1px solid rgb(175, 177, 184);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover svg {
+    animation-name: clients__animation__svg;
+    animation-duration: 1800ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+  
+  &:hover {
+    border-color: $blue-color;
+    cursor: pointer;
+    animation-name: clients__animation;
+    animation-duration: 1800ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+}
+.clients__container {
+  margin-bottom: 94px;
+}
+.clients__list {
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+
+.clients__heading {
+  @extend %heading;
+
+}
+
+.clients__logo {
+  &--yaco {
+    width: 41px;
+    height: 46px;
+  }
+  &--flag {
+    width: 40px;
+    height: 52px;
+  }
+  &--company {
+    width: 43px;
+    height: 41px;
+  }
+  &--foster {
+    width: 84px;
+    height: 40px;
+  }
+  &--brand {
+    width: 62px;
+    height: 45px;
+  }
+  &--tagline {
+    width: 93px;
+    height: 43px;
+  }
+}

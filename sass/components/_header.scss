@@ -1,0 +1,133 @@
+
+.header__contact__item--bib {
+  width: 142px;
+  height: 16px;
+}
+.header__logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: calc(31 / 26);
+  color: $logo-black;
+  &__blue {
+    color: $blue-color;
+  }
+
+  &__black {
+    color: $logo-black;
+  }
+}
+
+.header__nav,
+.header__nav__list,
+.header__contact__list {
+  display: flex;
+  align-items: center;
+}
+.header {
+  overflow: hidden;
+  width: 1600px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+
+  &__nav {
+    margin-left: 93px;
+  }
+  
+  &__contact__list {
+    margin-left: 215px;
+  }
+}
+header li a:hover {
+  color: $blue-color;
+}
+
+
+
+
+.header__contact__link {
+  display: flex;
+  align-items: center;
+  color:  $grey-color;
+  line-height: calc(16 / 14);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover svg {
+    fill: $blue-color;
+  }
+}
+
+
+.header__flex {
+  display: flex;
+  margin: 0 auto;
+}
+
+.header__nav__item,.header__contact__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+
+
+.header__contact__icon {
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--envelope {
+    width: 16px;
+    height: 12px;
+    fill: $grey-color;
+
+  }
+  &--smartphone {
+    width: 10px;
+    height: 16px;
+    fill: $grey-color;
+  }
+}
+
+
+
+
+
+
+
+.header__nav__link {
+@extend %nav-link;
+  
+  &:hover::after {
+    transform: translateY(0%);
+  }
+  &:not(.header__nav__link--active)::after {
+@extend %nav-link-no-active-after;
+  }
+  &:not(.header__nav__link--active):hover::after {
+    transform: translateY(0);
+  }
+
+  &--no__active:hover {
+    animation-name: no__active;
+    animation-duration: 1200ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  
+  }
+
+.header__nav__link--active {
+  color: $blue-color;
+  position: relative;
+  
+  &::after  {
+ @include nav-link-active (-1.5px, 48px)
+}
+  
+}
+
+
+
+
+

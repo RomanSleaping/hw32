@@ -1,0 +1,48 @@
+
+.portfolio__header {
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 94px;
+  width: 1600px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(236, 236, 236);
+}
+
+
+.header__contact__item--bib {
+  width: 142px;
+  height: 16px;
+}
+
+.portfolio__header__nav__link {
+  @extend %nav-link;  
+  
+  &--active {
+    color: $blue-color;
+    line-height: calc(16 / 14);
+    font-size: 14px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    position: relative;
+    
+    }
+    &--active::after {
+@include nav-link-active (0px, 100%);
+    }
+
+}
+.portfolio__header__nav__link:not(.portfolio__header__nav__link--active)::after {
+@extend %nav-link-no-active-after;
+
+}
+.portfolio__header__nav__link:hover::after {
+  transform: translateY(0);
+}
+
+
+
+
+
+
