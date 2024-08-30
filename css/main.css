@@ -7,7 +7,7 @@
   letter-spacing: 3%;
 }
 
-.portfolio__header__nav__link, .header-nav__link {
+.portfolio-header-nav__link, .header-nav__link {
   position: relative;
   color: #212121;
   line-height: 1.1428571429;
@@ -17,7 +17,7 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__header__nav__link:not(.portfolio__header__nav__link--active)::after, .header-nav__link:not(.header-nav__link--active)::after {
+.portfolio-header-nav__link:not(.portfolio__header__nav__link--active)::after, .header-nav__link:not(.header-nav__link--active)::after {
   content: " ";
   display: block;
   background-color: #2196f3;
@@ -350,7 +350,7 @@ header li a:hover {
   top: calc(100% + 27px);
 }
 
-.portfolio__header {
+.portfolio-header {
   overflow: hidden;
   margin: 0 auto;
   margin-bottom: 94px;
@@ -365,12 +365,12 @@ header li a:hover {
   border: 1px solid rgb(236, 236, 236);
 }
 
-.header__contact__item--bib {
+.header-contact__item--bib {
   width: 142px;
   height: 16px;
 }
 
-.portfolio__header__nav__link--active {
+.portfolio-header-nav__link--active {
   color: #2196f3;
   line-height: 1.1428571429;
   font-size: 14px;
@@ -379,7 +379,7 @@ header li a:hover {
   font-weight: 500;
   position: relative;
 }
-.portfolio__header__nav__link--active::after {
+.portfolio-header-nav__link--active::after {
   content: " ";
   display: block;
   width: 100%;
@@ -391,7 +391,7 @@ header li a:hover {
   top: calc(100% + 27px);
 }
 
-.portfolio__header__nav__link:hover::after {
+.portfolio-header-nav__link:hover::after {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
@@ -805,7 +805,7 @@ header li a:hover {
   height: 43px;
 }
 
-.filter__btn {
+.filter-list__btn {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -818,13 +818,13 @@ header li a:hover {
   padding: 6px 22px;
   border-radius: 4px;
 }
-.filter__btn:hover {
+.filter-list__btn:hover {
   background-color: #2196f3;
   color: #ffffff;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
-.filter__btn--active__btn {
+.filter-list__btn--active-btn {
   background-color: #2196f3;
   color: #ffffff;
   padding-left: 25px;
@@ -833,7 +833,7 @@ header li a:hover {
           box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.filter__list {
+.filter-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -843,7 +843,7 @@ header li a:hover {
   margin-bottom: 50px;
 }
 
-.filter__list__item:not(:last-child) {
+.filter-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -870,20 +870,20 @@ header li a:hover {
   width: 370px;
   height: 404px;
 }
-.portfolio__link__box {
+.portfolio__link--box {
   position: relative;
   width: 370px;
   height: 294px;
   overflow: hidden;
 }
 
-.portfolio__link:hover .overlay__box {
+.portfolio__link:hover .overlay-box {
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
           transform: translateY(-100%);
 }
 
-.overlay__box {
+.overlay-box {
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
@@ -900,7 +900,7 @@ header li a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-.overlay__box__text {
+.overlay-box__text {
   width: 322px;
   height: 168px;
   color: #ffffff;
@@ -929,13 +929,13 @@ header li a:hover {
   margin-left: 24px;
 }
 
-.portfolio__main {
+.portfolio-main {
   width: 1600px;
   margin: 0 auto;
   margin-bottom: 94px;
 }
 
-.portfolio__list {
+.portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -1,5 +1,5 @@
 
-.portfolio__header {
+.portfolio-header {
   overflow: hidden;
   margin: 0 auto;
   margin-bottom: 94px;
@@ -11,12 +11,12 @@
 }
 
 
-.header__contact__item--bib {
+.header-contact__item--bib {
   width: 142px;
   height: 16px;
 }
 
-.portfolio__header__nav__link {
+.portfolio-header-nav__link {
   @extend %nav-link;  
   
   &--active {
@@ -33,11 +33,11 @@
     }
 
 }
-.portfolio__header__nav__link:not(.portfolio__header__nav__link--active)::after {
+.portfolio-header-nav__link:not(.portfolio__header__nav__link--active)::after {
 @extend %nav-link-no-active-after;
 
 }
-.portfolio__header__nav__link:hover::after {
+.portfolio-header-nav__link:hover::after {
   transform: translateY(0);
 }
 
