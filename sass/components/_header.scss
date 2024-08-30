@@ -1,5 +1,5 @@
 
-.header__contact__item--bib {
+.header-contact__item--bib {
   width: 142px;
   height: 16px;
 }
@@ -9,18 +9,18 @@
   font-weight: 700;
   line-height: calc(31 / 26);
   color: $logo-black;
-  &__blue {
+  &--blue {
     color: $blue-color;
   }
 
-  &__black {
+  &--black {
     color: $logo-black;
   }
 }
 
-.header__nav,
-.header__nav__list,
-.header__contact__list {
+.header-nav,
+.header-nav__list,
+.header-contact {
   display: flex;
   align-items: center;
 }
@@ -31,11 +31,11 @@
   display: flex;
   align-items: center;
 
-  &__nav {
+  & .header-nav {
     margin-left: 93px;
   }
   
-  &__contact__list {
+  & .header-contact {
     margin-left: 215px;
   }
 }
@@ -46,7 +46,7 @@ header li a:hover {
 
 
 
-.header__contact__link {
+.header-contact__link {
   display: flex;
   align-items: center;
   color:  $grey-color;
@@ -60,18 +60,18 @@ header li a:hover {
 }
 
 
-.header__flex {
+.header--flex {
   display: flex;
   margin: 0 auto;
 }
 
-.header__nav__item,.header__contact__item:not(:last-child) {
+.header-nav__item,.header-contact__item:not(:last-child) {
   margin-right: 50px;
 }
 
 
 
-.header__contact__icon {
+.header-contact__icon {
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -94,20 +94,20 @@ header li a:hover {
 
 
 
-.header__nav__link {
+.header-nav__link {
 @extend %nav-link;
   
   &:hover::after {
     transform: translateY(0%);
   }
-  &:not(.header__nav__link--active)::after {
+  &:not(.header-nav__link--active)::after {
 @extend %nav-link-no-active-after;
   }
-  &:not(.header__nav__link--active):hover::after {
+  &:not(.header-nav__link--active):hover::after {
     transform: translateY(0);
   }
 
-  &--no__active:hover {
+  &--no-active:hover {
     animation-name: no__active;
     animation-duration: 1200ms;
     animation-timing-function: ease-in-out;
@@ -117,7 +117,7 @@ header li a:hover {
   
   }
 
-.header__nav__link--active {
+.header-nav__link--active {
   color: $blue-color;
   position: relative;
   

@@ -7,35 +7,43 @@
   width: 1600px;
   height: 708px;
   margin-bottom: 94px;
-}
-.team__heading {
-@extend %heading;
-}
-.team__subtitle {
-  color: $black-color;
+  &__heading {
+    @extend %heading;
+  }
+  &__subtitle {
+    color: $black-color;
 
-  font-size: 16px;
-  font-weight: 500;
-  line-height: calc(19 / 16);
-}
-.team__text {
-  color: $grey-color;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: calc(19 / 16);
-}
-.team__flex {
-  margin: 0 auto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(19 / 16);
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  }
+  &__img {
+    margin-bottom: 30px;
+  }
+  &__text {
+    color: $grey-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(19 / 16);
+  }
+  &--flex {
+    margin: 0 auto;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-.team__list {
+
+
+
+
+.team-list {
   display: flex;
   margin-top: 50px;
 }
-.team__list__item {
+.team-item {
   background-color: $white-color;
   display: flex;
   flex-direction: column;
@@ -50,39 +58,23 @@
     &:not(:last-child) {
       margin-right: 30px;
     }
+
 }
-
-.team__list__img {
-  margin-bottom: 30px;
+.links {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 16px;
+  gap: 10px;
 }
-
-
-.link__icon {
-  &__instagram {
-    width: 20px;
-    height: 20px;
-  }
-  &__twitter {
-    width: 20px;
-    height: 16.25px;
-  }
-  &__facebook {
-    width: 10px;
-    height: 20px;
-  }
-  &__linkedin {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-.team__icon__item {
+.links-item {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 22px;
   width: 44px;
   height: 44px;
   display: flex;
   justify-content: center;
+  align-items: center;
   &:hover svg {
     fill: $white-color;
   }
@@ -90,20 +82,45 @@
     background-color: $blue-color;
     border-radius: 22px;
   }
-}
-.link__icon {
-  box-sizing: border-box;
-  display: flex;
-  width: 44px;
-  align-items: center;
-  justify-content: center;
+  &__link {
+
+    box-sizing: border-box;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.team__link__list {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  margin-top: 16px;
-  gap: 10px;
+
+
+
+ .links-item__icon {
+  width: 20px;
+  height: 20px;
+
+  &--instagram {
+  width: 20px;
+  height: 20px;
+ 
+  }
+  &--twitter {
+    width: 20px;
+    height: 16.25px;
+  }
+  &--facebook {
+    width: 10px;
+    height: 20px;
+  }
+  &--linkedin {
+    width: 20px;
+    height: 20px;
+  }
 }
+
+
+
+
+
+
 

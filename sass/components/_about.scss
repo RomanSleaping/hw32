@@ -10,14 +10,14 @@
   @extend %heading;
 }
 
-.about__flex {
+.about--flex {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-.about__list {
+.about-list {
   display: flex;
   margin-top: 50px;
   &__item {
@@ -38,7 +38,7 @@
   }
 }
 
-.title__container {
+.about-list__title--container {
   width: 370px;
   height: 70px;
   display: flex;

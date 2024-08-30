@@ -1,14 +1,14 @@
-.subscribe__list {
+.subscribe-list {
   display: flex;
   gap: 10px;
 }
-.subscribe__list__item {
+.subscribe-list__item {
   width: 44px;
   height: 44px;
 
   border-radius: 22px;
 }
-.subscribe__list__link {
+.subscribe-list__link {
   width: 44px;
   height: 44px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -21,7 +21,7 @@
     background-color: $blue-color;
   }
 }
-.subscribe__list__icon {
+.subscribe-list__icon {
   fill: $white-color;
 
   &--instagram {

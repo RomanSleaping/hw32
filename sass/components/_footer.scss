@@ -5,7 +5,7 @@
   display: flex;
   margin: 0 auto;
 }
-.accent__blue {
+.footer__logo--blue {
   color: $blue-color;
 }
 .footer__logo {
@@ -15,14 +15,14 @@
   line-height: calc(31 / 26);
   color: $white-color;
 }
-.footer__location {
+.footer-contact__location {
   color: $white-color;
   margin-top: 9px;
   font-size: 14px;
   font-weight: 400;
   line-height: calc(24 / 14);
 }
-.footer__contact__link {
+.footer-contact__link {
   color: $footer-grey;
 
   font-size: 14px;
@@ -30,10 +30,10 @@
   line-height: calc(24 / 14);
 }
 
-.footer__flex {
+.footer--flex {
   margin-top: 60px;
 }
-.footer__container {
+.footer--container {
   margin: 0 auto;
   display: flex;
 }
